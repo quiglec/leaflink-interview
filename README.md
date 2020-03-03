@@ -10,6 +10,8 @@ Once data is loaded into the staging tables, impressions and clicks views are ab
 ## Installation
 In order to run successfully, Redshift must allow inbound traffic from the environment where leaflink_s3_to_redshift.py is being run. Additionally, the Redshift cluster must have IAM and role to read from the S3 bucket containing impressions and clicks data. 
 
+impressions_jsonpath.json and clicks_jsonpath.json files must each be uploaded to S3 for reference by COPY commands.
+
 The config.ini file must be updated with environment the values specific to your environment. Below are details on what values are required in each field.
 
 #### Redshift
